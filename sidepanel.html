@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContextCaddy</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="selected-cabinet-header">
+                    <span class="current-cabinet" id="currentCabinetHeader">No cabinet selected</span>
+                </div>
+                <button id="toggleSettings" class="btn btn-icon">⚙️</button>
+            </div>
+            <!-- Connection Status Bar -->
+            <div class="connection-status-bar" id="connectionStatusBar">
+                <div class="status-bar-fill" id="statusBarFill"></div>
+                <span class="status-bar-text" id="statusBarText"></span>
+            </div>
+        </header>
+
+        <!-- Settings Section -->
+        <section class="settings-section" id="settingsSection">
+            <div class="settings-content">
+                <div class="setting-row">
+                    <label>Min Text Length:</label>
+                    <input type="number" id="minLength" min="1" max="1000" value="10">
+                </div>
+                <div class="setting-row">
+                    <label>Max Text Length:</label>
+                    <input type="number" id="maxLength" min="100" max="10000" value="5000">
+                </div>
+                <button id="saveSettings" class="btn btn-primary btn-small">Save</button>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Cabinet Management -->
+            <section class="section cabinet-section">
+                <h3 class="section-title">Cabinets</h3>
+                
+                <div class="cabinet-controls">
+                    <div class="input-group">
+                        <input type="text" id="newCabinetName" placeholder="Cabinet name" maxlength="100">
+                        <button id="createCabinet" class="btn btn-primary btn-small">+ New</button>
+                    </div>
+                </div>
+
+                <div class="cabinet-list" id="cabinetList">
+                    <div class="loading">Loading...</div>
+                </div>
+
+                <div class="selected-cabinet">
+                    <div class="selected-info">
+                        <span class="label"></span>
+                        <span id="selectedCabinetName">None</span>
+                    </div>
+                    <button id="deleteCabinet" class="btn btn-danger btn-small" style="display: none;">Delete</button>
+                </div>
+            </section>
+
+            <!-- Add Content -->
+            <section class="section add-section">
+                <h3 class="section-title">Add Content</h3>
+                <div class="drop-zone" id="dropZone">
+                    <div class="drop-content">
+                        <div class="drop-icon">📄</div>
+                        <div class="drop-text">
+                            <div class="drop-title">Drop text here</div>
+                            <div class="drop-subtitle">Or right-click selected text</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Search -->
+            <section class="section search-section">
+                <h3 class="section-title">Search</h3>
+                <div class="search-controls">
+                    <div class="input-group">
+                        <input type="text" id="searchQuery" placeholder="Search content..." disabled>
+                        <button id="searchButton" class="btn btn-primary btn-small" disabled>Go</button>
+                    </div>
+                    <div class="search-options">
+                        <div class="option-group">
+                            <label>Results:</label>
+                            <input type="number" id="topK" min="1" max="20" value="5">
+                        </div>
+                        <div class="option-group">
+                            <label>Min Score:</label>
+                            <input type="number" id="similarityThreshold" min="0" max="1" value="0.3" step="0.1">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-results" id="searchResults"></div>
+            </section>
+        </div>
+
+        <!-- Status Messages -->
+        <div class="status-messages" id="statusMessages"></div>
+        
+        <!-- Footer Watermark -->
+        <footer class="footer-watermark">
+            <a href="https://beckettfrey.com" target="_blank" class="watermark-link">
+                Beckett Frey
+            </a>
+        </footer>
+    </div>
+
+    <script src="sidepanel.js"></script>
+</body>
+</html>
