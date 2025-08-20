@@ -1,5 +1,9 @@
 # ContextCaddy Chrome Extension
 
+<div align="center">
+  <img src="assets/example.gif" alt="ContextCaddy Demo" width="600"/>
+</div>
+
 A modern Chrome extension for organizing text chunks in cabinets, synced with the MCP-Cabinets Server.
 
 > **Note:** This repository contains only the Chrome extension code. Backend setup and services are managed separately in the [MCP-Cabinets repository](https://github.com/beckettfrey/mcp-cabinets).

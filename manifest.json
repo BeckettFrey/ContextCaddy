@@ -1,9 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "ContextCaddy",
+  "name": "Context Caddy",
   "version": "1.0.0",
-  "description": "Organize text chunks in cabinets, synced with MCP-Cabinets Server",
-  
+  "description": "Empower human chunking: organize, retrieve, and share context with smart MCP-connected cabinets for teams and individuals.",
   "permissions": [
     "sidePanel",
     "storage",
@@ -34,11 +33,11 @@
   "action": {
     "default_title": "ContextCaddy",
     "default_icon": {
-      "128": "icons/icon128.png"
+      "128": "assets/icon128.png"
     }
   },
   
-  "icons": {
-    "128": "icons/icon128.png"
+  "assets": {
+    "128": "assets/icon128.png"
   }
 }
