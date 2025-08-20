@@ -1,8 +1,10 @@
-# ContextCaddy Chrome Extension
-
 <div align="center">
-  <img src="assets/example.gif" alt="ContextCaddy Demo" width="600"/>
+  <a href="assets/example.gif" target="_blank">
+    <img src="https://img.shields.io/badge/🎬_View_Demo-FF6B6B?style=for-the-badge&logoColor=white&labelColor=2C3E50" alt="View Demo" />
+  </a>
 </div>
+
+# ContextCaddy Chrome Extension
 
 A modern Chrome extension for organizing text chunks in cabinets, synced with the MCP-Cabinets Server.
 
