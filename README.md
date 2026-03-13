@@ -1,6 +1,6 @@
 # ContextCaddy (Chrome Extension)
 
-A sleek ui for organizing text chunks in cabinets, synced with the MCP-Cabinets Server. These chunks can then be accessed by your agent/assistant via MCP.
+A sleek ui for organizing text chunks in cabinets, synced with the MCP-Cabinets Server. These chunks can then be accessed by your agent/assistant via MCP. [See it in action](https://github.com/BeckettFrey/ContextCaddy/blob/main/assets/example.gif).
 
 > [!NOTE]
 > This repository contains only the Chrome extension code. Backend setup and services are managed separately in the [MCP-Cabinets repository](https://github.com/beckettfrey/mcp-cabinets).
