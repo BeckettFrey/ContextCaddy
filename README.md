@@ -1,14 +1,9 @@
-<div align="center">
-  <a href="assets/example.gif" target="_blank">
-    <img src="https://img.shields.io/badge/🎬_View_Demo-FF6B6B?style=for-the-badge&logoColor=white&labelColor=2C3E50" alt="View Demo" />
-  </a>
-</div>
+# ContextCaddy (Chrome Extension)
 
-# ContextCaddy Chrome Extension
+A sleek ui for organizing text chunks in cabinets, synced with the MCP-Cabinets Server. These chunks can then be accessed by your agent/assistant via MCP.
 
-A modern Chrome extension for organizing text chunks in cabinets, synced with the MCP-Cabinets Server.
-
-> **Note:** This repository contains only the Chrome extension code. Backend setup and services are managed separately in the [MCP-Cabinets repository](https://github.com/beckettfrey/mcp-cabinets).
+> [!NOTE]
+> This repository contains only the Chrome extension code. Backend setup and services are managed separately in the [MCP-Cabinets repository](https://github.com/beckettfrey/mcp-cabinets).
 
 ### Bonsai Tree
 ```
@@ -27,7 +22,8 @@ ContextCaddy/
 
 ### Required Backend Setup
 
-**⚠️ Important**: ContextCaddy requires the backend services from the [MCP-Cabinets repository](https://github.com/beckettfrey/mcp-cabinets).
+> [!IMPORTANT]
+> ContextCaddy requires the backend services from the [MCP-Cabinets repository](https://github.com/beckettfrey/mcp-cabinets).
 
 1. **Clone the backend repository**:
    ```bash
@@ -41,13 +37,13 @@ ContextCaddy/
 
 ### Features
 
-✨ **Clean Interface**: Modern, intuitive side panel design  
-🗂️ **Cabinet Management**: Create, select, and delete cabinets  
-🔍 **Smart Search**: Search chunks within cabinets with relevance scores  
-📋 **Multiple Input Methods**: Drag & drop or context menu  
-🔄 **Real-time Sync**: Automatic sync with MCP-Cabinets Server  
-⚡ **Error Handling**: Graceful error handling and user feedback  
-⚙️ **Configurable Settings**: Adjustable text length limits  
+**Clean Interface**: Modern, intuitive side panel design  
+**Cabinet Management**: Create, select, and delete cabinets  
+**Smart Search**: Search chunks within cabinets with relevance scores  
+**Multiple Input Methods**: Drag & drop or context menu  
+**Real-time Sync**: Automatic sync with MCP-Cabinets Server  
+**Error Handling**: Graceful error handling and user feedback  
+**Configurable Settings**: Adjustable text length limits  
 
 ### Installation
 
@@ -109,7 +105,7 @@ To modify the extension:
 3. Click the refresh icon on the ContextCaddy extension
 4. Test your changes
 
-### Dependencies
+### Additional Notes
 - **Backend**: [MCP-Cabinets](https://github.com/beckettfrey/mcp-cabinets) API service
 - **Browser**: Chrome with Extension Manifest V3 support
 - **No build process**: Direct file loading for development
