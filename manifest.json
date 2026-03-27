@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "Context Caddy",
   "version": "1.0.0",
+  "author": "Beckett Frey <code@beckettfrey.com>",,
   "description": "Empower human chunking: organize, retrieve, and share context with smart MCP-connected cabinets for teams and individuals.",
   "permissions": [
     "sidePanel",
