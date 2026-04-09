@@ -40,11 +40,6 @@ class ContextCaddy {
     async loadSelectedCabinet() {
         const result = await chrome.storage.local.get(['selectedCabinet']);
         this.selectedCabinet = result.selectedCabinet || null;
-        
-        // Always start with no cabinet selected on fresh load
-        this.selectedCabinet = null;
-        await chrome.storage.local.remove(['selectedCabinet']);
-        
         this.updateSelectedCabinetUI();
     }
     
